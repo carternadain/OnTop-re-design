@@ -1,5 +1,27 @@
+
+ h1 ,h2,h3,h4,h5,h6{
+    color: black;
+    font-family: "Bubblegum Sans";
+    
+  
+
+  }
+.head {
+    background-image: url('images/image.JPG'); /* Replace 'images/head.jpg' with the path to your image */
+    background-position: center bottom; 
+    border-radius: 25px;
+
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: transparent; /* Set body background color to transparent */
+  }
+  
+  
+
 .large-container {
-    background-image: url('path/to/your/image.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+ 
     background-size: cover;
     background-position: center;
     padding: 100px 0;
@@ -16,9 +38,59 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     height: 100%;
   }
-  h1 ,p,h3,h2{
-      color: black;
+ 
+  .portfolio-container {
+    background-color: #f8f9fa; /* Light gray background color */
+    padding: 50px 0;
+    text-align: center;
   }
+  /* Custom CSS for the button */
+  .btn-portfolio {
+    margin-bottom: 20px;
+  }
+  /* Custom CSS for the cards */
+  .card {
+    border-radius: 20px; /* Rounded corners */
+    margin-bottom: 20px;
+  }
+
+  .footer {
+   
+    color: #fff; /* Text color */
+    padding: 20px 0;
+  }
+  .footer img {
+    width: 30px; /* Adjust image size as needed */
+    margin-right: 10px;
+  }
+
+  .centered-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+  }
+  
+    .contact-section {
+      background-color: #f8f9fa; /* Light gray background color */
+      padding: 50px 0; /* Adjust padding as needed */
+      margin-bottom: 100px; /* Add space between contact section and footer */
+    }
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #ffffff;
+      color: rgb(100, 50, 50); /* Text color */
+      padding: 20px 0;
+    }
+
+    .what-we-do{
+        font-size: 80px;
+    }
+    .text-size{
+        font-size: 25px;
+    }
