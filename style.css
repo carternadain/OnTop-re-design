@@ -7,10 +7,11 @@
 
   }
 .head {
-    background-image: url('images/image.JPG'); /* Replace 'images/head.jpg' with the path to your image */
+    background-image: url('images/image.JPG'); 
     background-position: center bottom; 
     border-radius: 25px;
-
+    
+    width: 95%;
   }
   body {
     margin: 0;
@@ -18,7 +19,7 @@
     background-color: transparent; /* Set body background color to transparent */
   }
   
-  
+
 
 .large-container {
  
@@ -40,6 +41,7 @@
     left: 0;
     width: 90%;
     height: 100%;
+  
   }
  
   .portfolio-container {
@@ -60,11 +62,12 @@
   .footer {
    
     color: #fff; /* Text color */
-    padding: 20px 0;
+
   }
+
   .footer img {
     width: 30px; /* Adjust image size as needed */
-    margin-right: 10px;
+  
   }
 
   .centered-section {
@@ -80,13 +83,16 @@
       margin-bottom: 100px; /* Add space between contact section and footer */
     }
     .footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: #ffffff;
-      color: rgb(100, 50, 50); /* Text color */
-      padding: 20px 0;
+  
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f8f9fa; /* Light gray background color */
+        color: #000000; /* Text color */
+        text-align: center;
+        padding: 20px 0; /* Adjust padding as needed */
     }
+    
 
     .what-we-do{
         font-size: 80px;
@@ -94,3 +100,13 @@
     .text-size{
         font-size: 25px;
     }
+
+    .scroll-animation {
+        opacity: 0; /* Initially hide the element */
+        transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+      }
+      
+      .scroll-animation.fade-in {
+        opacity: 1; /* Fade in the element */
+      }
+      
