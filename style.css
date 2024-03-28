@@ -1,112 +1,174 @@
-
- h1 ,h2,h3,h4,h5,h6{
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
     color: black;
     font-family: "Bubblegum Sans";
-    
-  
+}
 
-  }
+/* Header */
 .head {
-    background-image: url('images/image.JPG'); 
-    background-position: center bottom; 
+    background-image: url('images/image.JPG');
+    background-position: center bottom;
     border-radius: 25px;
-    
     width: 95%;
-  }
-  body {
+}
+
+/* Body */
+body {
     margin: 0;
     padding: 0;
-    background-color: transparent; /* Set body background color to transparent */
-  }
-  
+    background-color: transparent;
+}
 
-
+/* Large container */
 .large-container {
- 
     background-size: cover;
     background-position: center;
     padding: 100px 0;
-    color: #fff; /* Text color on top of the background image */
-  }
-  /* Custom CSS for the video */
-  .video-container {
+    color: #fff;
+}
+
+/* Video container */
+.video-container {
     position: relative;
-    padding-bottom: 56.25%; /* Aspect ratio 16:9 for responsive video */
+    padding-bottom: 56.25%;
     padding-top: 25px;
     height: 0;
-  }
-  .video-container iframe {
+}
+
+.video-container iframe {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 90%;
+    max-width: 800px;
     height: 100%;
-  
-  }
- 
-  .portfolio-container {
-    background-color: #f8f9fa; /* Light gray background color */
+}
+
+/* Portfolio container */
+.portfolio-container {
+    background-color: #f8f9fa;
     padding: 50px 0;
     text-align: center;
-  }
-  /* Custom CSS for the button */
-  .btn-portfolio {
+}
+
+/* Portfolio button */
+.btn-portfolio {
     margin-bottom: 20px;
-  }
-  /* Custom CSS for the cards */
-  .card {
-    border-radius: 20px; /* Rounded corners */
+}
+
+/* Cards */
+.card {
+    border-radius: 20px;
     margin-bottom: 20px;
-  }
+    transition: transform 0.3s ease-in-out;
+}
 
-  .footer {
-   
-    color: #fff; /* Text color */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-  }
+/* Footer */
+.footer {
+    color: #fff;
+}
 
-  .footer img {
-    width: 30px; /* Adjust image size as needed */
-  
-  }
+.footer img {
+    width: 30px;
+}
 
-  .centered-section {
+.footer a {
+    color: black;
+}
+
+/* Centered section */
+.centered-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
+}
+
+/* Contact section */
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    margin-bottom: 100px;
+}
+
+/* Footer */
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* What we do */
+.what-we-do {
+    font-size: 80px;
+}
+
+/* Text size */
+.text-size {
+    font-size: 25px;
+}
+
+/* Scroll animation */
+.scroll-animation {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.scroll-animation.fade-in {
+    opacity: 1;
+}
+
+/* Colors */
+.Color1 {
+    color: rgb(250, 157, 35);
+}
+
+.Color2 {
+    color: green;
+}
+
+/* Keyframe animations */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animation classes */
+.animate-left {
+    animation: slideInLeft 1s ease forwards;
+}
+
+.animate-right {
+    animation: slideInRight 1s ease forwards;
+}
+.title {
+    color: rgb(248, 246, 246) !important;
   }
   
-    .contact-section {
-      background-color: #f8f9fa; /* Light gray background color */
-      padding: 50px 0; /* Adjust padding as needed */
-      margin-bottom: 100px; /* Add space between contact section and footer */
-    }
-    .footer {
-  
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: #f8f9fa; /* Light gray background color */
-        color: #000000; /* Text color */
-        text-align: center;
-        padding: 20px 0; /* Adjust padding as needed */
-    }
-    
-
-    .what-we-do{
-        font-size: 80px;
-    }
-    .text-size{
-        font-size: 25px;
-    }
-
-    .scroll-animation {
-        opacity: 0; /* Initially hide the element */
-        transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
-      }
-      
-      .scroll-animation.fade-in {
-        opacity: 1; /* Fade in the element */
-      }
-      
